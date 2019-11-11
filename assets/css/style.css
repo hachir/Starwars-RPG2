@@ -1,0 +1,64 @@
+html { 
+    position: relative; 
+    min-height: 100%; 
+} 
+
+body {
+    background: url("../images/deathstar.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #FFF;
+    font-family: "Orbitron";
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 60px;
+}
+
+.logo {
+    float: right;
+}
+
+.game {
+    display: grid;
+    grid-template-rows: 250px 80px 300px 30px 80px;
+    grid-template-columns: repeat(4, 20vw);
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.character {
+    align-self: end;
+    grid-row-start: 1;
+    margin-top: 20px;
+}
+
+.name {
+    margin-bottom: 20px;
+    font-size: 18px;
+    height: 20px
+}
+
+.character img {
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    /*width: 80%;*/
+    width: 175px;
+    height: 175px;
+}
+
+.instructions {
+    grid-area: 2 / 1 / 2 / 5;
+    letter-spacing: 3px;
+    align-self: center;
+    font-size: 24px;
+}
+
+.attacker {
+    grid-area: 3 / 2 / 3 / 3;
+}
+
+.defender {
+    grid-area: 3 / 3 / 3 / 4;
+}
+
